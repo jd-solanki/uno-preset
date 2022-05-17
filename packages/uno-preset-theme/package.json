@@ -1,0 +1,25 @@
+{
+  "name": "uno-preset-theme",
+  "private": true,
+  "version": "0.0.0",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/uno-preset-theme.umd.js",
+  "module": "./dist/uno-preset-theme.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/uno-preset-theme.es.js",
+      "require": "./dist/uno-preset-theme.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9"
+  }
+}

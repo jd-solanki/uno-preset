@@ -14,20 +14,11 @@ export default defineConfig({
         presetUno(),
         presetThemeDefault()
       ],
-      // configDeps: ['./node_modules/uno-preset-theme/dist/uno-preset-theme.es.js']
     }),
   ],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
-  },
-  optimizeDeps: {
-    include: ['uno-preset-theme']
-  },
-  build: {
-    commonjsOptions: {
-      include: [/uno-preset-theme/, /node_modules/]
     }
   }
 })

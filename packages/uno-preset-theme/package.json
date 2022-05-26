@@ -5,12 +5,12 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/uno-preset-theme.umd.js",
-  "module": "./dist/uno-preset-theme.es.js",
+  "main": "./dist/uno-preset-theme.cjs",
+  "module": "./dist/uno-preset-theme.mjs",
   "exports": {
     ".": {
-      "import": "./dist/uno-preset-theme.es.js",
-      "require": "./dist/uno-preset-theme.umd.js"
+      "import": "./dist/uno-preset-theme.mjs",
+      "require": "./dist/uno-preset-theme.cjs"
     }
   },
   "scripts": {

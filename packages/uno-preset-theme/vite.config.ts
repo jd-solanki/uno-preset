@@ -4,9 +4,10 @@ import { defineConfig } from "vite"
 export default defineConfig({
   build: {
     lib: {
+      formats: ['cjs', 'es'],
       entry: path.resolve(__dirname, 'src/main.ts'),
       name: 'uno-preset-theme',
-      fileName: (format) => `uno-preset-theme.${format}.js`
+      fileName: (format) => `uno-preset-theme.${format === "es" ? "mjs" : "cjs"}`,
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
